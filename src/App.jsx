@@ -24,6 +24,9 @@ import HandlingMultipleInputs from './components/HandlingMultipleInputs'
 import HandlingFormSubmission from './components/HandlingFormSubmission'
 import UseEffectHook from './components/UseEffectHook'
 import MakingAPICall from './components/MakingAPICall'
+import BasicRouting from './components/BasicRouting'
+import RoutingWithLayout from './components/RoutingWithLayout'
+import PublicPrivateRouting from './components/PublicPrivateRouting'
 
 const tutorials = [
   { id: 9, name: 'Props Basics', component: PropsBasics },
@@ -48,6 +51,9 @@ const tutorials = [
   { id: 27, name: 'Handling Form Submission', component: HandlingFormSubmission },
   { id: 48, name: 'useEffect Hook', component: UseEffectHook },
   { id: 49, name: 'Making API Call', component: MakingAPICall },
+  { id: 50, name: 'Basic Routing', component: BasicRouting },
+  { id: 51, name: 'Routing with Layout', component: RoutingWithLayout },
+  { id: 52, name: 'Public & Private Routing', component: PublicPrivateRouting },
 ]
 
 function App() {
