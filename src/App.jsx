@@ -19,6 +19,11 @@ import EventHandling from './components/EventHandling'
 import PropsVsState from './components/PropsVsState'
 import StateBasics from './components/StateBasics'
 import MultipleStates from './components/MultipleStates'
+import HandlingInputFields from './components/HandlingInputFields'
+import HandlingMultipleInputs from './components/HandlingMultipleInputs'
+import HandlingFormSubmission from './components/HandlingFormSubmission'
+import UseEffectHook from './components/UseEffectHook'
+import MakingAPICall from './components/MakingAPICall'
 
 const tutorials = [
   { id: 9, name: 'Props Basics', component: PropsBasics },
@@ -38,6 +43,11 @@ const tutorials = [
   { id: 22, name: 'Props vs State', component: PropsVsState },
   { id: 23, name: 'State Basics', component: StateBasics },
   { id: 24, name: 'Multiple States', component: MultipleStates },
+  { id: 25, name: 'Handling Input Fields', component: HandlingInputFields },
+  { id: 26, name: 'Handling Multiple Inputs', component: HandlingMultipleInputs },
+  { id: 27, name: 'Handling Form Submission', component: HandlingFormSubmission },
+  { id: 48, name: 'useEffect Hook', component: UseEffectHook },
+  { id: 49, name: 'Making API Call', component: MakingAPICall },
 ]
 
 function App() {
@@ -49,7 +59,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>React.js Training - Tutorials 8-24</h1>
+        <h1>React.js Training - Tutorials</h1>
         <p>Select a tutorial from the dropdown to view examples</p>
       </header>
 
