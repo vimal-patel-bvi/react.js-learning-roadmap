@@ -1,0 +1,33 @@
+.css-demo-container {
+  padding: 20px;
+}
+
+.css-demo-card {
+  border: 2px solid #2196f3;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #e3f2fd;
+}
+
+.css-demo-button {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.css-demo-button:hover {
+  background-color: #1976d2;
+}
+
+.css-demo-info {
+  margin-top: 30px;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+}
+

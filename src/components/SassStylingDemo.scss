@@ -1,0 +1,126 @@
+// SASS Variables
+$primary-color: #2196f3;
+$secondary-color: #ff9800;
+$danger-color: #f44336;
+$success-color: #4caf50;
+$spacing-unit: 1rem;
+$border-radius: 8px;
+
+// SASS Mixin for buttons
+@mixin button-base {
+  padding: 10px 20px;
+  border-radius: $border-radius;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Button variants using nesting
+.button {
+  @include button-base;
+
+  &--primary {
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+
+  &--danger {
+    background-color: $danger-color;
+
+    &:hover {
+      background-color: darken($danger-color, 10%);
+    }
+  }
+
+  &--success {
+    background-color: $success-color;
+
+    &:hover {
+      background-color: darken($success-color, 10%);
+    }
+  }
+}
+
+// Card component with nesting
+.sass-card {
+  border: 2px solid $primary-color;
+  border-radius: $border-radius;
+  padding: $spacing-unit * 1.5;
+  margin: $spacing-unit 0;
+  background-color: #e3f2fd;
+
+  &__title {
+    margin-top: 0;
+    color: $primary-color;
+    font-size: 1.5rem;
+  }
+
+  &__content {
+    color: #333;
+    line-height: 1.6;
+  }
+
+  &--highlighted {
+    background-color: #fff3e0;
+    border-color: $secondary-color;
+
+    .sass-card__title {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Grid layout using SASS functions
+.sass-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $spacing-unit * 1.5;
+  margin-top: $spacing-unit * 2;
+}
+
+// Info box
+.sass-info {
+  margin-top: $spacing-unit * 2;
+  background-color: #f5f5f5;
+  padding: $spacing-unit;
+  border-radius: $border-radius;
+  border-left: 4px solid $primary-color;
+
+  h4 {
+    margin-top: 0;
+    color: $primary-color;
+  }
+
+  ul {
+    margin: $spacing-unit 0;
+    padding-left: $spacing-unit * 1.5;
+  }
+
+  li {
+    margin: $spacing-unit * 0.5 0;
+    color: #555;
+  }
+}

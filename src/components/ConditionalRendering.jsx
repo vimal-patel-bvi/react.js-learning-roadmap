@@ -1,5 +1,8 @@
 // Tutorial 16: Conditionally Rendering JSX & Components
 
+import { useContext } from "react";
+import { UserContext } from "./ContextApiBasics";
+
 function WelcomeMessage({ isLoggedIn }) {
   if (isLoggedIn) {
     return <h3 style={{ color: '#4CAF50' }}>Welcome back! You are logged in.</h3>;
@@ -28,6 +31,8 @@ function ConditionalRendering() {
   const user = 'John Doe';
   const showDetails = true;
   const hasPermission = false;
+  const {user: _user,  setUser} = useContext(UserContext);
+  console.log(_user);
 
   return (
     <div style={{ padding: '20px' }}>

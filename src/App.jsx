@@ -27,6 +27,18 @@ import MakingAPICall from './components/MakingAPICall'
 import BasicRouting from './components/BasicRouting'
 import RoutingWithLayout from './components/RoutingWithLayout'
 import PublicPrivateRouting from './components/PublicPrivateRouting'
+import BasicStyling from './components/BasicStyling'
+import InlineStylingDemo from './components/InlineStylingDemo'
+import CssStylesheetDemo from './components/CssStylesheetDemo'
+import CssModulesDemo from './components/CssModulesDemo'
+import SassStylingDemo from './components/SassStylingDemo'
+import TailwindCssDemo from './components/TailwindCssDemo'
+import StylingComparison from './components/StylingComparison'
+import ContextApiBasics from './components/ContextApiBasics'
+import ContextSeparateFileDemo from './components/ContextSeparateFileDemo'
+import ContextWithReducerDemo from './components/ContextWithReducerDemo'
+import CustomHooksIntro from './components/CustomHooksIntro'
+import UseLocalStorageHookDemo from './components/UseLocalStorageHookDemo'
 
 const tutorials = [
   { id: 9, name: 'Props Basics', component: PropsBasics },
@@ -54,6 +66,18 @@ const tutorials = [
   { id: 50, name: 'Basic Routing', component: BasicRouting },
   { id: 51, name: 'Routing with Layout', component: RoutingWithLayout },
   { id: 52, name: 'Public & Private Routing', component: PublicPrivateRouting },
+  { id: 53, name: 'Basic Styling', component: BasicStyling },
+  { id: 54, name: 'Inline Styling', component: InlineStylingDemo },
+  { id: 55, name: 'CSS Stylesheets', component: CssStylesheetDemo },
+  { id: 56, name: 'CSS Modules', component: CssModulesDemo },
+  { id: 57, name: 'SASS Styling', component: SassStylingDemo },
+  { id: 58, name: 'Tailwind CSS Setup', component: TailwindCssDemo },
+  { id: 59, name: 'SASS vs Tailwind Comparison', component: StylingComparison },
+  { id: 75, name: 'Context API Basics', component: ContextApiBasics },
+  { id: 76, name: 'Context In Own File & Sharing', component: ContextSeparateFileDemo },
+  { id: 77, name: 'Context + Reducer (Complex State)', component: ContextWithReducerDemo },
+  { id: 78, name: 'Creating Custom Hooks', component: CustomHooksIntro },
+  { id: 79, name: 'useLocalStorage Hook', component: UseLocalStorageHookDemo },
 ]
 
 function App() {
