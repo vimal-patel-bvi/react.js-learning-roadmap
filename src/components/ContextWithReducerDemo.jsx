@@ -6,6 +6,11 @@ import { useReducer } from 'react';
 function ThemeControls() {
   // const { state, toggleMode, setPrimaryColor, resetTheme } = useTheme();
  const [state, dispatch] = useReducer(themeReducer, initialThemeState);
+ let abc= 10;
+
+ function test() {
+  abc = 20;
+ }
 
   return (
     <div
@@ -23,7 +28,8 @@ function ThemeControls() {
         <strong>Mode:</strong> {state.mode}
       </p>
       <p>
-        <strong>Primary Color:</strong> {state.primaryColor}
+        <strong>Primary Color:</strong>
+        {abc}
       </p>
       <p>
         <strong>Accent Color:</strong> {state.accentColor}
@@ -31,7 +37,7 @@ function ThemeControls() {
 
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginTop: '10px' }}>
         <button
-          onClick={() => dispatch({ type: 'TOGGLE_MODE' })}
+          onClick={()=>test()}
           style={{
             padding: '8px 14px',
             borderRadius: '5px',

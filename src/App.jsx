@@ -39,6 +39,11 @@ import ContextSeparateFileDemo from './components/ContextSeparateFileDemo'
 import ContextWithReducerDemo from './components/ContextWithReducerDemo'
 import CustomHooksIntro from './components/CustomHooksIntro'
 import UseLocalStorageHookDemo from './components/UseLocalStorageHookDemo'
+import UseMemoDemo from './components/UseMemoDemo'
+import UseCallbackDemo from './components/UseCallbackDemo'
+import ReduxStoreDemo from './components/ReduxStoreDemo'
+import PromisesDemo from './components/PromisesDemo'
+import UseRefAndReactMemoDemo from './components/UseRefAndReactMemoDemo'
 
 const tutorials = [
   { id: 9, name: 'Props Basics', component: PropsBasics },
@@ -78,6 +83,11 @@ const tutorials = [
   { id: 77, name: 'Context + Reducer (Complex State)', component: ContextWithReducerDemo },
   { id: 78, name: 'Creating Custom Hooks', component: CustomHooksIntro },
   { id: 79, name: 'useLocalStorage Hook', component: UseLocalStorageHookDemo },
+  { id: 80, name: 'useMemo', component: UseMemoDemo },
+  { id: 81, name: 'useCallback', component: UseCallbackDemo },
+  { id: 82, name: 'Redux Store & Slices', component: ReduxStoreDemo },
+  { id: 83, name: 'Promises & Promise.all', component: PromisesDemo },
+  { id: 84, name: 'useRef, React.memo & More', component: UseRefAndReactMemoDemo },
 ]
 
 function App() {
