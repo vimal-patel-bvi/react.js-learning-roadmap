@@ -1,9 +1,9 @@
 // Tutorial: useCallback In React
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, memo } from 'react';
 
 // Child that receives a callback prop (would re-render on parent re-render if callback reference changed)
-function Button({ label, onClick }) {
+const Button = memo(function Button({ label, onClick }) {
   console.log(`Button "${label}" rendered`);
   return (
     <button
@@ -13,7 +13,7 @@ function Button({ label, onClick }) {
       {label}
     </button>
   );
-}
+});
 
 function UseCallbackDemo() {
   const [count, setCount] = useState(0);
@@ -25,12 +25,12 @@ function UseCallbackDemo() {
   // WITH useCallback: same function reference until dependencies change
   const handleIncrement = useCallback(() => {
     setCount((c) => c + 1);
-  }, []);
+  }, [count]);
 
   const handleReset = useCallback(() => {
     setCount(0);
     setName('');
-  }, []);
+  }, [count, name]);
 
   return (
     <div style={{ padding: '20px' }}>
